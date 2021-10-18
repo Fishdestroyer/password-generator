@@ -3,9 +3,8 @@ I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
 
 *****************************************************************
-*** WORKED WITH A PRIVATE DEVELOPER "TUTOR" AND REFERENCED YOU TUBE VIDEO https://www.youtube.com/watch?v=9sT03jEwcaw
 
-*** Used code found in examples on stack overflow, 
+*** Used code found in examples on stack overflow, youtube and other web based searches*** 
 
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
