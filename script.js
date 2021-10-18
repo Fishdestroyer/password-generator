@@ -14,7 +14,7 @@ var specialCharacter = ["!", "@", "#", "$", "<", "(", ")", "&", "*", "?", "+", "
 document.getElementById("generate").addEventListener("click", myFunction);
 
 function myFunction() {
-  password = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
+ var password = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
 if (!password) {
   prompt ("A value is required");
 
@@ -25,11 +25,12 @@ if (!password) {
    lowerCaseLetters = confirm("Will this password contain lower case letters?");
    upperCaseLetters = confirm("Will this password contain upper case letters?")
    specialCharacters = confirm("Will this password contain special characters?");
+
+   for (var i = 0; i < password; i++) {
+      
 };
 }
-for (var i = 0; i < password; i++) {
-   var pickChoices = choices[Math.floor(Math.random() * choices.length)];
-   password.push(pickChoices);
+
 };
 
 // here is where I am lost at adding everything together to generate password
