@@ -10,6 +10,12 @@ var upperCaseLetters=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 var specialCharacter = ["!", "@", "#", "$", "<", "(", ")", "&", "*", "?", "+", "=", "^"];
 
+let str1 = "numbers";
+let str2= "lower case letters";
+let str3 = "upper case letters";
+let str4 = "special characters";
+let res = str1.concat(str2, str3, str4);
+
 // Write password to the #password input
 document.getElementById("generate").addEventListener("click", myFunction);
 
@@ -27,8 +33,9 @@ if (!password) {
    specialCharacters = confirm("Will this password contain special characters?");
 
    for (var i = 0; i < password; i++) {
-      
-};
+      var pickChoices = res[Math.floor(Math.random() * choices.length)];
+      password.push(pickChoices);
+}
 }
 
 };
