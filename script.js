@@ -38,11 +38,6 @@ if (!password) {
    includeUpperCaseLetters = confirm("Will this password contain upper case letters?");
    includeSpecialCharacters = confirm("Will this password contain special characters?");
  
- //  if (!includeSpecialCharacters && !includeLowerCaseLetters && !includeUpperCaseLetters && !includeNumbers) {
-   //res = alert("You must choose a criteria!");
-//}/ else if (includeSpecialCharacters && includeLowerCaseLetters && includeUpperCaseLetters && includeNumbers) {
-//res = numbers.concat(lowerCaseLetters , upperCaseLetters , specialCharacters);
-//}
 
 if(includeNumbers === true) {
   res =  res.concat(numbers);
@@ -80,7 +75,7 @@ console.log("final results", generatedPassword)
 //if(includeSpecialCharacters === true) {
   // res.concat (specialCharacters);
 //}
-console.log(numbers, lowerCaseLetters, upperCaseLetters, specialCharacters)
+//console.log(numbers, lowerCaseLetters, upperCaseLetters, specialCharacters)
  
       //pickRes = res[Math.floor(Math.random() * res.length)];
     //password.push(pickRes);

@@ -4,7 +4,11 @@ SO THAT I can create a strong password that provides greater security
 
 *****************************************************************
 
-*** Used code found in examples on stack overflow, youtube and other web based searches*** 
+*** Used code found in examples on stack overflow, youtube and other web based searches as well as help from***
+***TA's, Tutors and private tutors to complete this assignment*** 
+***https://fishdestroyer.github.io/password-generator/***
+
+
 
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
