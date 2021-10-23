@@ -4,6 +4,7 @@
 
 // Get references to the #generate element
 // var generateBtn = 
+// Variables for the assignment
 var generateBtn = document.querySelector("#generate");
 var numbers = ["0","1","2","3","4","5","6","7","8","9"];
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", ];
@@ -16,7 +17,7 @@ var includeLowerCaseLetters;
 var includeUpperCaseLetters;
 var includeSpecialCharacters;
 var password;
-
+// string with the res array
 let str1 = "numbers";
 let str2 = "lower case letters";
 let str3 = "upper case letters";
@@ -29,6 +30,7 @@ document.getElementById("generate").addEventListener("click", myFunction);
 
 function myFunction() {
   password = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
+  // if statements for criteria selection and requirements
 if (!password) {
   prompt ("A value is required");
 } else if (password < 8 || password > 128){
@@ -57,7 +59,7 @@ var generatedPassword = "";
 
 for (var i = 0; i < password; i++) {
    generatedPassword += res[Math.floor(Math.random() * res.length)];
-
+// connect the script to the password element
    document.getElementById("password").innerHTML = generatedPassword;
 };
 
@@ -66,26 +68,9 @@ for (var i = 0; i < password; i++) {
 
 console.log(generatedPassword)
 
-// in the console, i now have a password but cant get it to list to the screen/ password are on the generator
+
 };
 
-//var password = [];
-
-
-
-
-
-
-//if(includeUpperCaseLetters === true) {
- //  res.concat (upperCaseLetters);
-//}
-//if(includeLowerCaseLetters === true) {
-  // res.concat (lowerCaseLetters);
-//}
-//if(includeSpecialCharacters === true) {
-  // res.concat (specialCharacters);
-//}
-//console.log(numbers, lowerCaseLetters, upperCaseLetters, specialCharacters)
  
 
 
