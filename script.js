@@ -26,6 +26,7 @@ let res = [];
 // Write password to the #password input
 document.getElementById("generate").addEventListener("click", myFunction);
 
+
 function myFunction() {
   password = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
 if (!password) {
@@ -41,7 +42,7 @@ if (!password) {
 
 if(includeNumbers === true) {
   res = res.concat(numbers);
-   console.log(res)
+   //console.log(res)
 }
 if(includeUpperCaseLetters === true) {
     res = res.concat(upperCaseLetters);
@@ -56,8 +57,13 @@ var generatedPassword = "";
 
 for (var i = 0; i < password; i++) {
    generatedPassword += res[Math.floor(Math.random() * res.length)];
-  
+
+   document.getElementById("password").innerHTML = generatedPassword;
 };
+
+
+
+
 console.log(generatedPassword)
 
 // in the console, i now have a password but cant get it to list to the screen/ password are on the generator
@@ -79,9 +85,8 @@ console.log(generatedPassword)
 //if(includeSpecialCharacters === true) {
   // res.concat (specialCharacters);
 //}
-console.log(numbers, lowerCaseLetters, upperCaseLetters, specialCharacters)
+//console.log(numbers, lowerCaseLetters, upperCaseLetters, specialCharacters)
  
-      //pickRes = res[Math.floor(Math.random() * res.length)];
-    //password.push(pickRes);
+
 
 
